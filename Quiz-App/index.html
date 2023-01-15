@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <title>Quiz-App</title>
+  </head>
+  <body>
+    <div class="btn-start">
+        <button class="btn btn-lg">TESTE BAŞLA!</button>
+    </div>
+    <div class="container" id="quiz">
+      <div class="row">
+        <div class="col">
+    <div class="card mb-3 shadow">
+        <div class="card-header">
+            <h3 class="card-title" id="question">Question</h3>
+            <div class="timer">
+              <div class="time-text">Kalan Süre</div>
+              <div class="time-second" id="time"></div>
+            </div>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li><input type="radio" name="answer" id="a"><label id="a_text" for="a">Answer</label></input></li>
+                <li><input type="radio" name="answer" id="b"><label id="b_text" for="b">Answer</label></input></li>
+                <li><input type="radio" name="answer" id="c"><label id="c_text" for="c">Answer</label></input></li>
+                <li><input type="radio" name="answer" id="d"><label id="d_text" for="d">Answer</label></input></li>
+            </ul>
+            <button id="pre" class="btn btn-outline-dark" type="button"><i class="fa-solid fa-circle-left"></i></button>
+            <button id="next" class="btn btn-outline-dark" type="button"><i class="fa-sharp fa-solid fa-circle-right"></i></button>  
+            <button id="finish" class="btn btn-outline-danger" type="button">Testi Bitir</button> 
+        </div>
+
+    </div>
+  </div>
+  </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="App.js"></script>
+  </body>
+</html>
